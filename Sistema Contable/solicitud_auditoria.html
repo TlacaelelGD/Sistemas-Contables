@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nueva Solicitud de Auditoría</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <button title="Panel">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" width="22" alt="Panel">
+    </button>
+    <button title="Auditorías">
+      <img src="https://cdn-icons-png.flaticon.com/512/709/709579.png" width="22" alt="Auditorías">
+    </button>
+    <button title="Notificaciones">
+      <img src="https://cdn-icons-png.flaticon.com/512/1827/1827392.png" width="22" alt="Notificaciones">
+    </button>
+    <button title="Usuarios">
+      <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="22" alt="Usuarios">
+    </button>
+    <button class="active" title="Nueva solicitud">
+      <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" width="22" alt="Nueva solicitud">
+    </button>
+  </aside>
+
+  <main class="main-content">
+    <div class="card">
+      <h1>NUEVA SOLICITUD DE AUDITORIA</h1>
+      <p class="subtitle">Llene cada uno de los campos solicitados</p>
+
+      <div class="form-row">
+        <div>
+          <label for="tipo">TIPO</label>
+          <select id="tipo">
+            <option value="">Seleccione el tipo de auditoría</option>
+            <option>Interna</option>
+            <option>Externa</option>
+            <option>De cumplimiento</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="archivo">ARCHIVO</label>
+          <input type="file" id="archivo" />
+        </div>
+
+        <div>
+          <button class="enviar" id="btnEnviar">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
